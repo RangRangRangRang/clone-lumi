@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lumi Demo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand me-4" href="#">
+                    <img src="https://lumi.vn/wp-content/uploads/2025/08/logo.svg" alt="Lumi">
+                </a>
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav menu-box">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giải pháp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thiết bị thông minh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nhà phân phối</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Công trình</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Đối tác</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center gap-2 ms-3">
+                    <button class="circle-btn">
+                        🔍
+                    </button>
+                    <button class="circle-btn">
+                        🛒
+                    </button>
+                    <button class="circle-btn">
+                        VN
+                    </button>
+                    <a href="#" class="contact-btn">
+                        <span>Liên hệ</span>
+                        <div class="contact-circle">
+                            →
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="footer-lumi">
+        <div class="container">
+            <div class="row align-items-center border-bottom pb-4 mb-4">
+                <div class="col-lg-6">
+                    <h1 class="logo-footer">LUMI</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p>Chúng tôi là công ty chuyên sản xuất và cung cấp thiết bị và giải pháp nhà thông minh, chiếu sáng thông minh, nâng cao trải nghiệm sống tiện nghi, an toàn cho mọi gia đình.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4>Liên hệ</h4>
+
+                    <h6 class="text-success">MIỀN BẮC</h6>
+                    <p>Số 38, Đỗ Đức Dục, Nam Từ Liêm, Hà Nội</p>
+                    <p>☎ 0904 665 965</p>
+
+                    <h6 class="text-success">MIỀN TRUNG</h6>
+                    <p>Số 159, Đường 30/4, Hải Châu, Đà Nẵng</p>
+                    <p>☎ 0939 265 965</p>
+
+                    <h6 class="text-success">MIỀN NAM</h6>
+                    <p>Số 21, Đường số 41, TP.Thủ Đức, TP.HCM</p>
+                    <p>☎ 0936 118 199</p>
+
+                    <h6 class="text-success">HỖ TRỢ</h6>
+                    <p>☎ 0335 445 599</p>
+                    <img src="https://lumi.vn/wp-content/uploads/2025/08/logo-dang-ky-bo-cong-thuong-300x114.png" alt="dtb" style="width:200px; height:80px;" />
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h4>Lumi</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Công trình</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h4>Giải pháp</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Chiếu sáng</a></li>
+                        <li><a href="#">Điều khiển rèm</a></li>
+                        <li><a href="#">Điều hòa</a></li>
+                        <li><a href="#">Âm thanh</a></li>
+                        <li><a href="#">An ninh</a></li>
+                        <li><a href="#">Nhà thông minh</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h4>Thiết bị</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Công tắc</a></li>
+                        <li><a href="#">Đèn LED</a></li>
+                        <li><a href="#">Camera</a></li>
+                        <li><a href="#">Khóa cửa</a></li>
+                        <li><a href="#">Ổ cắm</a></li>
+                        <li><a href="#">Module</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-3 border-top">
+                Copyright © 2026 Lumi Smart Home.
+                All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
